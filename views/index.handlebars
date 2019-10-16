@@ -1,0 +1,36 @@
+<h1>Burgers!</h1>
+
+<h2>burgers that aren't devoured!</h2>
+
+<ul>
+  {{#each burger_data}}
+  {{#unless devoured}}
+    {{burger_name}}
+    <div>
+      <form class="devour-form">
+        <input input type="hidden" class="burger_id" type="test" value={{this.id}}"><br />
+        <button type="submit" class="btn btn-default">Devour it</button>
+      </form>
+    </div>
+  {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>burgers that are devoured!</h2>
+
+<ul>
+  {{#each burger_data}}
+  {{#if devoured}}
+    {{burger_name}}
+  {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a burger</h2>
+<form action="/burgers/create" method="POST">
+
+    <label for="ca">burger Name:</label>
+    <input type="text" id="ca" name="burger_name">
+
+  <button type="submit">Add Burger</button>
+</form>
