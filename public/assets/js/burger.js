@@ -1,3 +1,5 @@
+
+// When "button devoured" is pressed changes the burgers from one table to another
 $(document).ready(function(){
   $(".devour-form").on("submit", function(event){
     event.preventDefault();

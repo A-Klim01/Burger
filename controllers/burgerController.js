@@ -15,7 +15,7 @@ router.get("/", function(req, res) {
     res.render("index", hbsObject);
   });
 });
-
+//Post Method creates burgers
 router.post("/burgers/create", function(req, res) {
   burger.insertOne(
     req.body.burger_name, function(result) {
