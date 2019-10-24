@@ -1,7 +1,7 @@
 
 // When "button devoured" is pressed changes the burgers from one table to another
 $(document).ready(function(){
-  $(".devour-form").on("submit", function(event){
+  $(document).on("click", ".devour-form", function(event){
     event.preventDefault();
     var burger_id = $(this).children(".burger_id").val();
     console.log(burger_id);
