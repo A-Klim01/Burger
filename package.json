@@ -1,5 +1,5 @@
 {
-  "name": "sequelized_burger",
+  "name": "burger",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/A-Klim01/sequelized_Burger.git"
+    "url": "git+https://github.com/A-Klim01/Burger.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/A-Klim01/sequelized_Burger/issues"
+    "url": "https://github.com/A-Klim01/Burger/issues"
   },
-  "homepage": "https://github.com/A-Klim01/sequelized_Burger#readme",
+  "homepage": "https://github.com/A-Klim01/Burger#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
